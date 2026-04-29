@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/delete_serach_design_Linear"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/mainDark"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- Movie Image with Overlay -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="175dp">
+
+        <!-- Movie Image -->
+
+        <!-- Gradient Dark Overlay -->
+        <ImageView
+            android:id="@+id/delete_search_movie_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/maxresdefault" />
+
+        <!-- Movie Title Positioned on Left Side -->
+
+        <TextView
+            android:id="@+id/delete_search_movie_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start"
+            android:background="@color/movietitlebac"
+            android:fontFamily="@font/movie_name"
+            android:padding="10dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:text="Vidaamuyarchi"
+            android:textColor="#E1F0F0"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Play Button Icon -->
+        <ImageView
+            android:id="@+id/delete_search_play_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/play_button_background"
+            android:src="@drawable/play" />
+    </FrameLayout>
+
+    <!-- Movie Info Row -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mainDark"
+        android:backgroundTint="@color/mainDark"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+        <!-- Age Rating -->
+
+        <!-- Language -->
+        <TextView
+            android:id="@+id/delete_search_movie_language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="8dp"
+            android:background="@drawable/rounded_background"
+            android:padding="7dp"
+            android:text="English"
+            android:textColor="@color/movietitlebac"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Duration -->
+
+        <TextView
+            android:id="@+id/delete_Searchmovie_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+
+            android:background="@drawable/rounded_background"
+            android:padding="7dp"
+            android:text="165 min"
+            android:textColor="@color/movietitlebac"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/delete_search_movie_language"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/deletemoviebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="#d40e7d"
+            android:text="@string/deleteMovie"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</LinearLayout>

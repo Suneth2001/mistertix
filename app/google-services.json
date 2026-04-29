@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1077682158948",
+    "project_id": "mistertix-e3b56",
+    "storage_bucket": "mistertix-e3b56.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1077682158948:android:9e3fd9d056cfed1fe78e71",
+        "android_client_info": {
+          "package_name": "lk.apexrow.mistertix"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1077682158948-fffegntqcfh5ombj1btou9gp982ae6bk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "lk.apexrow.mistertix",
+            "certificate_hash": "6fda94e857c15fd3e67a8df9023e82ec343a79f0"
+          }
+        },
+        {
+          "client_id": "1077682158948-1cmkor970j2r8s549tt6rmtk3tbardau.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvrbt8lfXOtgKtxHxCNY3MCYo_leFuPWg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1077682158948-1cmkor970j2r8s549tt6rmtk3tbardau.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

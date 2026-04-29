@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="lk.apexrow.mistertix.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_movie"
+        android:name="lk.apexrow.mistertix.ui.movies.MovieFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_movie" />
+
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="lk.apexrow.mistertix.ui.profile.MyAccount"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_my_account" >
+        <action
+            android:id="@+id/action_nav_profile_self"
+            app:destination="@id/nav_profile" />
+    </fragment>
+</navigation>

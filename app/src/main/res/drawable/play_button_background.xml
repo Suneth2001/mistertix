@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Pressed state (darker black) -->
+    <item android:state_pressed="true">
+        <shape android:shape="oval">
+            <solid android:color="#DD000000"/>  <!-- More opacity -->
+        </shape>
+    </item>
+
+    <!-- Default state (semi-transparent) -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/white"/>  <!-- Semi-transparent -->
+        </shape>
+    </item>
+
+</selector>

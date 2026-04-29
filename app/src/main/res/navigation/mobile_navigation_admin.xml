@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation_admin"
+    app:startDestination="@+id/nav_Dashboard_admin">
+
+    <fragment
+        android:id="@+id/nav_Dashboard_admin"
+        android:name="lk.apexrow.mistertix.ui.admin_Dashboard.Dashboard_Admin_Fragment"
+        android:label="@string/title_dashboard_admin"
+        tools:layout="@layout/fragment_movie__admin_" />
+
+    <fragment
+        android:id="@+id/nav_Movie_admin"
+        android:name="lk.apexrow.mistertix.ui.admin_movie.Movie_Admin_Fragment"
+        android:label="@string/title_movie_manage_admin"
+        tools:layout="@layout/fragment_payment_admin_" />
+
+    <fragment
+        android:id="@+id/nav_payments_admin"
+        android:name="lk.apexrow.mistertix.ui.admin_payments.payments_admin_Fragment"
+        android:label="@string/title_payment_admin"
+        tools:layout="@layout/fragment_dashboard__admin_" />
+
+</navigation>
